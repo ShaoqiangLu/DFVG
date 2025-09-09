@@ -1,5 +1,3 @@
-# DFVG
-DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU.   
 
 # DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU
 
@@ -24,4 +22,20 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 ---
 
 ## 📂 Project Structure
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/DFVG.git
+   cd DFVG
+
+open README.md
+
+make build
+./run_dfvg
+
+Guan Maochuang, DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU, 2025.
 
