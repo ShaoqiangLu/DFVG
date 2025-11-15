@@ -1,0 +1,60 @@
+# Global default speculative decoding parameters
+defaults:
+  max_draft_tokens: 64              # Upper bound of draft tokens per iteration
+  min_draft_tokens: 8               # Lower bound of draft tokens per iteration
+  max_verify_tokens: 16             # Maximum number of tokens verified per iteration
+  acceptance_ratio_threshold: 0.6   # Minimum ratio of accepted draft tokens to keep current draft length
+  backoff_ratio: 0.5                # When acceptance is low, draft length is scaled by this factor
+  growth_ratio: 1.2                 # When acceptance is high, draft length is scaled by this factor
+  max_pending_tokens: 256           # Global upper bound on in-flight speculative tokens
+  enable_adaptive_drafting: true    # Enable adaptive adjustment of draft length
+  enable_latency_aware_scheduling: true  # Enable scheduling decisions based on measured latency
+
+# Per pair configuration of draft (FPGA) and verify (GPU) models
+pairs:
+  # ---------------- LLaMA family ----------------
+  - name: "llama7b_with_llama160m"
+    draft_config: "configs/llama-160m.yaml"   # Small draft model running on FPGA
+    verify_config: "configs/llama-7b.yaml"    # Full-scale verify model on GPU
+    max_draft_tokens: 32                      # Override default for this pair
+    max_verify_tokens: 16
+    acceptance_ratio_threshold: 0.65
+    notes: "Default LLaMA-7B experiment setting with LLaMA-160M as draft."
+
+  # ---------------- Vicuna family ----------------
+  - name: "vicuna7b_with_vicuna160m"
+    draft_config: "configs/vicuna-160m.yaml"
+    verify_config: "configs/vicuna7b.yaml"
+    max_draft_tokens: 32
+    max_verify_tokens: 16
+    acceptance_ratio_threshold: 0.65
+    notes: "Vicuna-7B verify model using Vicuna-160M as the FPGA draft model."
+
+  # ---------------- OPT family ----------------
+  - name: "opt13b_with_opt125m"
+    draft_config: "configs/opt-125m.yaml"
+    verify_config: "configs/opt13b.yaml"
+    max_draft_tokens: 24                       # Slightly smaller draft window for a heavier verify model
+    max_verify_tokens: 12
+    acceptance_ratio_threshold: 0.6
+    notes: "OPT-13B verify model with OPT-125M as a lightweight draft model."
+
+  # ---------------- Qwen family ----------------
+  - name: "qwen3_8b_with_qwen3_0_6b"
+    draft_config: "configs/qwen3-0.6b.yaml"
+    verify_config: "configs/qwen3-8b.yaml"
+    max_draft_tokens: 48                       # Qwen3-0.6B provides higher throughput, allowing longer drafts
+    max_verify_tokens: 16
+    acceptance_ratio_threshold: 0.7
+    notes: "Qwen3-8B verify model with Qwen3-0.6B as a stronger draft model."
+
+# Optional: knobs for ablation studies
+ablation:
+  disable_speculative_decoding:
+    enabled: false            # If true, run pure verify-only decoding (baseline)
+  fixed_draft_length:
+    enabled: false            # If true, do not adapt draft length based on acceptance ratio
+    value: 32                 # Fixed draft length used when enabled
+  single_pair_only:
+    enabled: false            # If true, only run a specific pair for controlled experiments
+    pair_name: "llama7b_with_llama160m"
