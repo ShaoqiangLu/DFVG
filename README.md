@@ -99,13 +99,11 @@ python scripts/download_models.py
 ## ▶️ 7. Run Example Experiments
 (1) Run experiments:
 ```bash
-python scripts/run_experiments.py \
-  --config configs/llama7b.yaml
+python scripts/run_experiments.py --config configs/llama7b.yaml
 ```
 (2) Collect results:
 ```bash
-python scripts/collect_results.py \
-  --output results/
+python scripts/collect_results.py --output results/
 ```
 
 ## 📄 8. Expected Output Files
