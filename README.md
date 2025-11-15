@@ -16,9 +16,6 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
   <img src="DFVG_fpga.png" alt="DFVG Architecture" width="1000">
 </p>
 
-<p align="center">
-  <img src="APP_gif.gif" alt="DFVG Runtime" width="1000">
-</p>
 
 <p align="center">
   <img src="DFVG_result.png" alt="DFVG Architecture" width="1000">
