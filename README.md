@@ -107,20 +107,20 @@ python scripts/collect_results.py --output results/
 ```
 
 ## 📄 8. Expected Output Files
-
+```bash
 • performance_summary.json: Overall speedup and efficiency metrics
 • energy_analysis.csv: Detailed energy consumption breakdown
 • ablation_results.json: Component-wise performance contributions
 • resource_utilization.log: FPGA and GPU resource usage
-
+```
 
 ## 🔧 9. Configuration Parameters
-
+```bash
 • Draft Length: Modify configs/draft_params.yaml
 • Batch Size: Adjust BATCH_SIZE in configuration files
 • Model Selection: Change TARGET_MODEL and DRAFT_MODEL
 • Hardware Mapping: Modify device assignments in device_config.yaml
-
+```
 ## ➕ 10. Additional Tools
 (1) Add a New Model
 ```bash
