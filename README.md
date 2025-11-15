@@ -160,17 +160,17 @@ Please cite our work if you use our code or discuss our findings in your own res
 ## 🔍 Related Work  
 Explore related work on speculative decoding and heterogeneous acceleration:
 
-[Ghidorah](https://arxiv.org/abs/2505.23219)Ghidorah: Fast LLM Inference on Edge with Speculative Decoding and Hetero-Core Parallelism.  
+[Ghidorah].[Ghidorah: Fast LLM Inference on Edge with Speculative Decoding and Hetero-Core Parallelism.](https://arxiv.org/abs/2505.23219)  
 Jinhui Wei, Ye Huang, Yuhui Zhou, Jiazhi Jiang, Jiangsu Du, and Yutong Lu.  
 
-[DuoDecoding](https://arxiv.org/abs/2503.00784)DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting.  
+[DuoDecoding] {DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting.](https://arxiv.org/abs/2503.00784)  
 Ai Lv, Honglin Guo, Qipeng Guo, and Xipeng Qiu.  
 
-[SpecInfer](https://arxiv.org/abs/2305.09781)SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification.  
+[SpecInfer].[SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification.](https://arxiv.org/abs/2305.09781)  
 Xupeng Miao, Gabriele Oliaro, Zhihao Zhang, Xinhao Cheng, Zeyu Wang, Zhengxin Zhang, Rae Ying Yee Wong, Alan Zhu, Lijie Yang, Xiaoxiang Shi, et al.  
 *The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*  
 
-[SpecPIM](https://dl.acm.org/doi/10.1145/3620666.3651352)SpecPIM: Accelerating Speculative Inference on PIM-enabled System via Architecture–Dataflow Co-exploration.  
+[SpecPIM].[SpecPIM: Accelerating Speculative Inference on PIM-enabled System via Architecture–Dataflow Co-exploration.](https://dl.acm.org/doi/10.1145/3620666.3651352)  
 Cong Li, Zhe Zhou, Size Zheng, Jiaxi Zhang, Yun Liang, and Guangyu Sun.  
 *Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*  
 
