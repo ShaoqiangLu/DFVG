@@ -8,8 +8,14 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 
 ## 📷 Architecture
 
-![DFVG Architecture](v80_fpga.jpg)
-![DFVG RunTime](ChatOPU_gif.gif)
+<p align="center">
+  <img src="v80_fpga.jpg" alt="DFVG Architecture" width="600">
+</p>
+
+<p align="center">
+  <img src="ChatOPU_gif.gif" alt="DFVG Runtime" width="600">
+</p>
+
 ---
 
 ## ✨ Features
