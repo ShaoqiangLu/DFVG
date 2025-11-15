@@ -85,12 +85,12 @@ python scripts/download_models.py
 ```
 
 ## ▶️ 7. Run Example Experiments
-Run experiments:
+(1) Run experiments:
 ```bash
 python scripts/run_experiments.py \
   --config configs/llama7b.yaml
 ```
-Collect results:
+(2) Collect results:
 ```bash
 python scripts/collect_results.py \
   --output results/
