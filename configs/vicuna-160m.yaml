@@ -1,0 +1,40 @@
+model:
+  name: "vicuna-160m"
+  dtype: "float16"
+  tokenizer_path: "tokenizer.model"   # Tokenizer for Vicuna-160M
+
+paths:
+  model_dir: "models/vicuna-160m/"
+  weights: "models/vicuna-160m/*.bin"
+
+draft_engine:
+  enabled: true
+  type: "fpga"
+  bitstream: "fpga/bitstreams/vicuna-160m.bit"
+  rpc_addr: "localhost:9100"
+  max_draft_tokens: 32                # Small draft model → shorter speculative window
+
+verify_engine:
+  enabled: true
+  type: "gpu"
+  device: "cuda:0"
+  kv_cache_dtype: "fp16"
+
+inference:
+  max_seq_len: 2048                   # Light models usually support shorter context
+  max_batch_size: 8                   # Draft model can handle larger batch sizes
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 50
+
+scheduler:
+  fusion_batch_size: 16
+  overlap_compute: true
+  max_pending_tokens: 64
+
+tp:
+  tensor_parallel_size: 1
+
+logging:
+  level: "info"
+  dump_traces: false
