@@ -157,23 +157,26 @@ Please cite our work if you use our code or discuss our findings in your own res
 ```
 
 
-## 🔍 Related Work
+## 🔍 Related Work  
 Explore related work on speculative decoding and heterogeneous acceleration:
 
 [Ghidorah] Ghidorah: Fast LLM Inference on Edge with Speculative Decoding and Hetero-Core Parallelism.  
 Jinhui Wei, Ye Huang, Yuhui Zhou, Jiazhi Jiang, Jiangsu Du, and Yutong Lu.  
-*arXiv preprint arXiv:2505.23219, 2025.*
+*arXiv preprint arXiv:2505.23219, 2025.*  
+[Link → https://arxiv.org/abs/2505.23219](https://arxiv.org/abs/2505.23219) :contentReference[oaicite:0]{index=0}
 
 [DuoDecoding] DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting.  
 Ai Lv, Honglin Guo, Qipeng Guo, and Xipeng Qiu.  
-*arXiv preprint arXiv:2503.00784, 2025.*
+*arXiv preprint arXiv:2503.00784, 2025.*  
+[Link → https://arxiv.org/abs/2503.00784](https://arxiv.org/abs/2503.00784) :contentReference[oaicite:1]{index=1}
 
 [SpecInfer] SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification.  
 Xupeng Miao, Gabriele Oliaro, Zhihao Zhang, Xinhao Cheng, Zeyu Wang, Zhengxin Zhang, Rae Ying Yee Wong, Alan Zhu, Lijie Yang, Xiaoxiang Shi, et al.  
-*The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*
+*The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*  
+[Link → https://arxiv.org/abs/2305.09781](https://arxiv.org/abs/2305.09781) :contentReference[oaicite:2]{index=2}
 
 [SpecPIM] SpecPIM: Accelerating Speculative Inference on PIM-enabled System via Architecture–Dataflow Co-exploration.  
-Ong Li, Zhe Zhou, Size Zheng, Jiaxi Zhang, Yun Liang, and Guangyu Sun.  
-*Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*
-
+Cong Li, Zhe Zhou, Size Zheng, Jiaxi Zhang, Yun Liang, and Guangyu Sun.  
+*Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*  
+[Link → https://dl.acm.org/doi/10.1145/3620666.3651352](https://dl.acm.org/doi/10.1145/3620666.3651352) :contentReference[oaicite:3]{index=3}
 
