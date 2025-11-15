@@ -40,13 +40,14 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 
 
 ## 📂 Project Structure
+```bash
 DFVG/
 ├── fpga/                 # FPGA design and bitstream build flow
 ├── gpu/                  # GPU kernels and related build files
 ├── scripts/              # Utility, model, dataset, and experiment scripts
 ├── results/              # (Generated) experiment outputs
 └── README.md             # This file
-
+```
 ---
 
 ## 🚀 Getting Started
