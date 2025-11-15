@@ -163,7 +163,7 @@ Explore related work on speculative decoding and heterogeneous acceleration:
 [Ghidorah].[Ghidorah: Fast LLM Inference on Edge with Speculative Decoding and Hetero-Core Parallelism.](https://arxiv.org/abs/2505.23219)  
 Jinhui Wei, Ye Huang, Yuhui Zhou, Jiazhi Jiang, Jiangsu Du, and Yutong Lu.  
 
-[DuoDecoding] {DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting.](https://arxiv.org/abs/2503.00784)  
+[DuoDecoding] [DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting.](https://arxiv.org/abs/2503.00784)  
 Ai Lv, Honglin Guo, Qipeng Guo, and Xipeng Qiu.  
 
 [SpecInfer].[SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification.](https://arxiv.org/abs/2305.09781)  
