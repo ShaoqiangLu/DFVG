@@ -13,7 +13,7 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 </p>
 
 <p align="center">
-  <img src="V80_fpga.jpg" alt="DFVG Architecture" width="600">
+  <img src="DFVG_fpga.png" alt="DFVG Architecture" width="600">
 </p>
 
 <p align="center">
