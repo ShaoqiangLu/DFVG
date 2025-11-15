@@ -9,23 +9,23 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 ## 📷 Architecture
 
 <p align="center">
-  <img src="DFVG_top.png" alt="DFVG Architecture" width="800">
+  <img src="DFVG_top.png" alt="DFVG Architecture" width="1000">
 </p>
 
 <p align="center">
-  <img src="DFVG_fpga.png" alt="DFVG Architecture" width="800">
+  <img src="DFVG_fpga.png" alt="DFVG Architecture" width="1000">
 </p>
 
 <p align="center">
-  <img src="APP_gif.gif" alt="DFVG Runtime" width="800">
+  <img src="APP_gif.gif" alt="DFVG Runtime" width="1000">
 </p>
 
 <p align="center">
-  <img src="DFVG_result.png" alt="DFVG Architecture" width="800">
+  <img src="DFVG_result.png" alt="DFVG Architecture" width="1000">
 </p>
 
 <p align="center">
-  <img src="DFVG_ablation.png" alt="DFVG Architecture" width="600">
+  <img src="DFVG_ablation.png" alt="DFVG Architecture" width="1000">
 </p>
 
 
