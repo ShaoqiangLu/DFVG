@@ -23,13 +23,13 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 
 ## 📂 Project Structure
 DFVG/
-├── fpga/ # Verilog HDL implementation & bitstream build
-├── gpu/ # CUDA kernels & verification pipeline
-├── runtime/ # Cross-device system controller
-├── configs/ # Model and hardware configuration files
-├── scripts/ # Experiment automation & utilities
-├── datasets/ # Benchmark datasets (downloaded separately)
-└── README.md
+├── fpga/                 # FPGA design and bitstream build flow
+├── gpu/                  # GPU kernels and related build files
+├── configs/              # Experiment and model configuration files
+├── scripts/              # Utility, model, dataset, and experiment scripts
+├── results/              # (Generated) experiment outputs
+└── README.md             # This file
+
 ---
 
 ## 🚀 Getting Started
