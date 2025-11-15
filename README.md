@@ -1,8 +1,28 @@
 
 # DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU
 
-**DFVG (Draft-on-FPGA, Verify-on-GPU)** is a heterogeneous computing architecture designed for **speculative decoding** in large language models.  
-The key idea is to perform the **draft generation** stage on FPGAs for fast parallel candidate generation, and the **verification** stage on GPUs for efficient matrix computation. This design fully leverages the complementary strengths of both hardware platforms to achieve **low latency and high throughput** decoding.
+Welcome to the official code repository for "DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU".
+Your star means a lot to us in developing this project! ⭐⭐⭐
+
+## 📰 News
+
+- **2025-11-16**: Updated the codebase with new features and configurations.
+- **2025-08-20**: Submitted the paper.
+
+
+---
+
+## ✨ Introduction
+**DFVG (Draft-on-FPGA, Verify-on-GPU)** is a heterogeneous computing architecture designed for 
+**speculative decoding** in large language models.  
+The key idea is to perform the **draft generation** stage on FPGAs for fast parallel candidate generation, 
+and the **verification** stage on GPUs for efficient matrix computation. This design fully leverages 
+the complementary strengths of both hardware platforms to achieve **low latency and high throughput** decoding.
+
+- **FPGA Draft Generation**: Fast candidate sequence generation with parallel computation  
+- **GPU Verification**: Efficient verification leveraging GPU’s strong matrix operations  
+- **Heterogeneous Collaboration**: Exploits FPGA and GPU complementarity to reduce latency and energy cost  
+- **Modular Design**: Flexible deployment and easy extension across hardware platforms  
 
 ---
 
@@ -26,18 +46,7 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 </p>
 
 
-
-
 ---
-
-## ✨ Features
-
-- **FPGA Draft Generation**: Fast candidate sequence generation with parallel computation  
-- **GPU Verification**: Efficient verification leveraging GPU’s strong matrix operations  
-- **Heterogeneous Collaboration**: Exploits FPGA and GPU complementarity to reduce latency and energy cost  
-- **Modular Design**: Flexible deployment and easy extension across hardware platforms  
----
-
 
 ## 📂 Project Structure
 ```bash
@@ -133,5 +142,36 @@ python scripts/add_model.py \
 python scripts/prepare_dataset.py
 --input custom_data.json
 ```
+
+## 📚 Citation
+
+Please cite our work if you use our code or discuss our findings in your own research:
+
+```bibtex
+@article{dfvg2025specdecoding,
+  title={DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU},
+  author={xxx, xxx},
+  journal={xxx, xxx},
+  year={2025}
+}
+
+## 🔍 Related Work
+Explore related work on speculative decoding and heterogeneous acceleration:
+
+[Ghidorah] Ghidorah: Fast LLM Inference on Edge with Speculative Decoding and Hetero-Core Parallelism.  
+Jinhui Wei, Ye Huang, Yuhui Zhou, Jiazhi Jiang, Jiangsu Du, and Yutong Lu.  
+*arXiv preprint arXiv:2505.23219, 2025.*
+
+[DuoDecoding] DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting.  
+Ai Lv, Honglin Guo, Qipeng Guo, and Xipeng Qiu.  
+*arXiv preprint arXiv:2503.00784, 2025.*
+
+[SpecInfer] SpecInfer: Accelerating Large Language Model Serving with Tree-based Speculative Inference and Verification.  
+Xupeng Miao, Gabriele Oliaro, Zhihao Zhang, Xinhao Cheng, Zeyu Wang, Zhengxin Zhang, Rae Ying Yee Wong, Alan Zhu, Lijie Yang, Xiaoxiang Shi, et al.  
+*The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*
+
+[SpecPIM] SpecPIM: Accelerating Speculative Inference on PIM-enabled System via Architecture–Dataflow Co-exploration.  
+Ong Li, Zhe Zhou, Size Zheng, Jiaxi Zhang, Yun Liang, and Guangyu Sun.  
+*Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2024.*
 
 
