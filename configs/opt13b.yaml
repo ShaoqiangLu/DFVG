@@ -1,0 +1,40 @@
+model:
+  name: "opt-13b"
+  dtype: "float16"
+  tokenizer_path: "tokenizer.model"   # Path to the tokenizer for OPT-13B
+
+paths:
+  model_dir: "models/opt-13b/"
+  weights: "models/opt-13b/*.bin"     # Sharded weight files for OPT-13B
+
+draft_engine:
+  enabled: true
+  type: "fpga"
+  bitstream: "fpga/bitstreams/opt13b.bit"
+  rpc_addr: "localhost:9000"
+  max_draft_tokens: 48                # Slightly smaller draft size for a larger verify model
+
+verify_engine:
+  enabled: true
+  type: "gpu"
+  device: "cuda:0"
+  kv_cache_dtype: "fp16"
+
+inference:
+  max_seq_len: 2048                   # Typical context length for OPT checkpoints
+  max_batch_size: 2                   # Reduced batch size due to larger model size
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 50
+
+scheduler:
+  fusion_batch_size: 8                # Smaller fusion batch for heavier model
+  overlap_compute: true
+  max_pending_tokens: 96
+
+tp:
+  tensor_parallel_size: 1
+
+logging:
+  level: "info"
+  dump_traces: false
