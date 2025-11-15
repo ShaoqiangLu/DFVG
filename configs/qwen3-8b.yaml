@@ -1,0 +1,40 @@
+model:
+  name: "qwen3-8b"
+  dtype: "float16"
+  tokenizer_path: "tokenizer.model"   # Path to the tokenizer for Qwen3-8B
+
+paths:
+  model_dir: "models/qwen3-8b/"
+  weights: "models/qwen3-8b/*.bin"    # Sharded weight files for Qwen3-8B
+
+draft_engine:
+  enabled: true
+  type: "fpga"
+  bitstream: "fpga/bitstreams/qwen3-8b.bit"
+  rpc_addr: "localhost:9001"          # Use a different port if running multiple bitstreams
+  max_draft_tokens: 64
+
+verify_engine:
+  enabled: true
+  type: "gpu"
+  device: "cuda:0"
+  kv_cache_dtype: "fp16"
+
+inference:
+  max_seq_len: 4096                   # Qwen family typically supports long context
+  max_batch_size: 4
+  temperature: 1.0
+  top_p: 0.9                          # Slightly more conservative nucleus sampling
+  top_k: 50
+
+scheduler:
+  fusion_batch_size: 16
+  overlap_compute: true
+  max_pending_tokens: 128
+
+tp:
+  tensor_parallel_size: 1
+
+logging:
+  level: "info"
+  dump_traces: false
