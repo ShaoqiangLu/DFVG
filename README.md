@@ -21,20 +21,43 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 
 ---
 
-## 📂 Project Structure
 
+
+
+## 📂 Project Structure
+DFVG/
+├── fpga/ # Verilog HDL implementation & bitstream build
+├── gpu/ # CUDA kernels & verification pipeline
+├── runtime/ # Cross-device system controller
+├── configs/ # Model and hardware configuration files
+├── scripts/ # Experiment automation & utilities
+├── datasets/ # Benchmark datasets (downloaded separately)
+└── README.md
 ---
 
 ## 🚀 Getting Started
 
 1. Clone the repository
-   ```bash
+```bash
+git clone https://anonymous.4open.science/r/DFVG-DE39
+cd DFVG
 
+sudo apt update
+sudo apt install build-essential cmake
+pip install -r requirements.txt
 
 open README.md
 
 make build
 ./run_dfvg
+source /opt/xilinx/xrt/setup.sh
+export XILINX_VIVADO=/opt/Xilinx/Vivado/2024.1
+
+cd fpga/
+make synthesize
+make implement
+python scripts/run_experiments.py --config configs/llama7b.yaml
+python scripts/collect_results.py --output results/
 
 Guan Maochuang, DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU, 2025.
 
