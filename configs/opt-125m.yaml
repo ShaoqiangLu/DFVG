@@ -1,0 +1,40 @@
+model:
+  name: "opt-125m"
+  dtype: "float16"
+  tokenizer_path: "tokenizer.model"   # Tokenizer for OPT-125M
+
+paths:
+  model_dir: "models/opt-125m/"
+  weights: "models/opt-125m/*.bin"
+
+draft_engine:
+  enabled: true
+  type: "fpga"
+  bitstream: "fpga/bitstreams/opt-125m.bit"
+  rpc_addr: "localhost:9102"
+  max_draft_tokens: 24                # OPT has slower attention → reduce draft length
+
+verify_engine:
+  enabled: true
+  type: "gpu"
+  device: "cuda:0"
+  kv_cache_dtype: "fp16"
+
+inference:
+  max_seq_len: 2048
+  max_batch_size: 8
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 50
+
+scheduler:
+  fusion_batch_size: 12               # Smaller batch for FB-style architecture
+  overlap_compute: true
+  max_pending_tokens: 48
+
+tp:
+  tensor_parallel_size: 1
+
+logging:
+  level: "info"
+  dump_traces: false
