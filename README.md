@@ -9,7 +9,7 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 ## 📷 Architecture
 
 <p align="center">
-  <img src="dfvg_top" alt="DFVG Architecture" width="600">
+  <img src="DFVG_top.png" alt="DFVG Architecture" width="600">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@ The key idea is to perform the **draft generation** stage on FPGAs for fast para
 </p>
 
 <p align="center">
-  <img src="ChatOPU_gif.gif" alt="DFVG Runtime" width="600">
+  <img src="APP_gif.gif" alt="DFVG Runtime" width="600">
 </p>
 
 ---
