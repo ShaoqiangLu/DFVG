@@ -90,8 +90,6 @@ make synthesize
 make implement
 ```
 
-
-
 ## 🧩 5. Compile GPU Kernels
 This compiles all GPU kernels required for verification stage.
 ```bash
@@ -143,6 +141,8 @@ python scripts/prepare_dataset.py
 --input custom_data.json
 ```
 
+---
+
 ## 📚 Citation
 
 Please cite our work if you use our code or discuss our findings in your own research:
@@ -156,6 +156,7 @@ Please cite our work if you use our code or discuss our findings in your own res
 }
 ```
 
+---
 
 ## 🔍 Related Work  
 Explore related work on speculative decoding and heterogeneous acceleration:
