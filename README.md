@@ -52,11 +52,12 @@ the complementary strengths of both hardware platforms to achieve **low latency 
 ## 📂 Project Structure
 ```bash
 DFVG/
-├── fpga/                 # FPGA design and bitstream build flow
-├── gpu/                  # GPU kernels and related build files
-├── scripts/              # Utility, model, dataset, and experiment scripts
-├── results/              # (Generated) experiment outputs
-└── README.md             # This file
+├── fpga/                 # FPGA-side draft generation pipeline
+├── gpu/                  # GPU-side verification kernels & parallel schedulers
+├── cpu/                  # Host runtime: task orchestration, scheduling, I/O
+├── scripts/              # Dataset prep, model conversion, experiment launcher
+├── results/              # Auto-generated logs, metrics, plots, bitstreams
+└── README.md             # Project overview and usage instructions
 ```
 ---
 
