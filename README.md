@@ -36,6 +36,9 @@ the complementary strengths of both hardware platforms to achieve **low latency 
   <img src="DFVG_fpga.png" alt="DFVG Architecture" width="1000">
 </p>
 
+<p align="center">
+  <img src="DFVG_algorithm" alt="DFVG Architecture" width="1000">
+</p>
 
 <p align="center">
   <img src="DFVG_result.png" alt="DFVG Architecture" width="1000">
