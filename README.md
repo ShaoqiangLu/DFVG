@@ -145,6 +145,19 @@ python scripts/prepare_dataset.py
 --input custom_data.json
 ```
 
+## 🔄 11. Run DFVG with 5 repeated trials
+
+```bash
+python scripts/run_all.py \
+  --model-path /path/to/model \
+  --dataset-path data/custom_data.json \
+  --max-new-tokens 128 \
+  --draft-length 8 \
+  --batch-size 1 \
+  --num-runs 5 \
+  --tag qwen3-test
+```
+
 ---
 
 ## 📚 Citation
