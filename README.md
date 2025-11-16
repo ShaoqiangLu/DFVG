@@ -33,7 +33,7 @@ the complementary strengths of both hardware platforms to achieve **low latency 
 </p>
 
 <p align="center">
-  <img src="DFVG_fpga.png" alt="DFVG Architecture" width="1000">
+  <img src="DFVG_fpg.png" alt="DFVG Architecture" width="1000">
 </p>
 
 
