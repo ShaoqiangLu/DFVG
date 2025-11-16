@@ -10,7 +10,6 @@ Welcome to the official code repository for "[https://anonymous.4open.science/r/
 - **2025-11-15**: Updated the codebase with new features and configurations.
 - **2025-08-20**: Submitted the paper.
 
-1
 ---
 
 ## ✨ Introduction
