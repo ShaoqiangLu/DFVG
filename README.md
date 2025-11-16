@@ -1,8 +1,8 @@
 
 # DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU
 
-Welcome to the official code repository for "DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU".
-Your star means a lot to us in developing this project! ⭐⭐⭐
+Welcome to the official code repository for "[https://anonymous.4open.science/r/DFVG-DE39]".
+⭐⭐⭐Your star means a lot to us in developing this project! 
 
 ## 📰 News
 
